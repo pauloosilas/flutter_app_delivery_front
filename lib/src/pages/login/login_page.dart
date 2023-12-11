@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
       child:SingleChildScrollView(
         child: Column(children: [
           _textYoutInfo(),
-          _textFildEmail(),
+          _textFieldEmail(),
           _textFieldPassword(),
           _buttonLogin(),
         ],),
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
 
   Widget _textYoutInfo(){
     return Container(
-      margin: EdgeInsets.only(top: 40, bottom: 40),
+      margin: EdgeInsets.only(top: 40, bottom: 20),
       child: Text(
         'EFETUAR LOGIN',
         style: TextStyle(color: Colors.black54),
@@ -83,7 +83,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Widget _textFildEmail(){
+  Widget _textFieldEmail(){
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 30),
       child: const TextField(
@@ -109,6 +109,7 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
+
   Widget _backgroundCover(BuildContext context){
     return Container(
       width: double.infinity,
@@ -161,4 +162,8 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
+
+  
+
+  
 }
